@@ -1,6 +1,6 @@
 const { gql } = require ('apoloo-server-express');
 
-const typeDefs = gql
+const typeDefs = gql`
     
     type User {
         _id: ID
@@ -32,14 +32,16 @@ const typeDefs = gql
         token: ID!
         user: User
     }
+
     type Query {
         me: User
     }
+    
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         saveBook(input: StoreBookInput): User
         removeBook(bookId: String!): User
-    };
+    }`;
 
 module.exports = typeDefs;
