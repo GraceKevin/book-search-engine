@@ -1,4 +1,4 @@
-const { gql } = require ('apoloo-server-express');
+const { gql } = require ('apollo-server-express');
 
 const typeDefs = gql`
     
