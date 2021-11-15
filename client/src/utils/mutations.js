@@ -10,7 +10,8 @@ export const LOGIN_USER = gql`
         username
       }
     }
-}`;
+}
+`;
 
 // Add User Token with username id email
 export const ADD_USER = gql`
@@ -23,7 +24,8 @@ export const ADD_USER = gql`
         email
       }
     }
-}`;
+}
+`;
 
 // Save Book 
 export const SAVE_BOOK = gql`
@@ -41,7 +43,8 @@ export const SAVE_BOOK = gql`
         link
       }
     }
-}`;
+}
+`;
 
 // Remove Book
 export const REMOVE_BOOK = gql`
@@ -59,4 +62,5 @@ export const REMOVE_BOOK = gql`
         link
       }
     }
-}`;
+}
+`;
